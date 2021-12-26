@@ -2,19 +2,19 @@
   <div id="app">
     <div class="app" :class="period">
       <WeatherApp :class="period"></WeatherApp>
-      <AppCredits :year="year" :class="period"></AppCredits>
+      <!-- <AppCredits :year="year" :class="period"></AppCredits> -->
     </div>
   </div>
 </template>
 
 <script>
 import WeatherApp from './components/WeatherApp'
-import AppCredits from './components/AppCredits'
+//import AppCredits from './components/AppCredits'
 export default {
   name: 'App',
   components: {
-    WeatherApp,
-    AppCredits
+    WeatherApp
+  //  AppCredits
   },
   data() {
     return {

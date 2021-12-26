@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 /*
 * Service that fetch and parse weather forecast from openweathermap.org.
 */
@@ -14,7 +16,7 @@ class WeatherForecast {
         this.temperatureHigh = 0;
         this.temperatureLow = 0;
 
-        this.location = 'c4878fd181ff5d85d886113485e30271';
+        this.location = process.env.WEATHER_API_KEY;
         this.description = 'Please connect to internet to fetch latest forecast :)';
         this.weatherIcon = require('../assets/icons/weather/cloud.svg');
 

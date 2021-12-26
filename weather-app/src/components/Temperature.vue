@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@tariqp193 
-gilankpam
-/
-progressive-weather-app
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-progressive-weather-app/src/components/Temperature.vue
-@jimmerioles
-jimmerioles Initial commit
-Latest commit 8329daf on Feb 20, 2018
- History
- 1 contributor
-109 lines (93 sloc)  2.26 KB
-   
 <template>
     <section>
         <div class="temperature__value">{{ (scaleSymbol === 'C')? value : fValue }}</div>
